@@ -1,5 +1,7 @@
 # Nginx Module Template
 
+This example reads the `X-Api-Key` and outputs its value in a JSON response.
+
 ## Configuration
 
 First, you have to successfully install the dependencies. To do so, run
