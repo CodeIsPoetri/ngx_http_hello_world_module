@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "ngx_core.h": "c",
+        "ngx_config.h": "c",
+        "ngx_http.h": "c",
+        "ngx_solaris_config.h": "c",
+        "ngx_posix_config.h": "c",
+        "utils.h": "c",
+        "main.h": "c"
+    }
+}
