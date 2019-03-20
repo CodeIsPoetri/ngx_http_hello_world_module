@@ -1,6 +1,6 @@
-## Nginx Module Template
+# Nginx Module Template
 
-## Configuration
+## Configuration
 
 First, you have to successfully install the dependencies. To do so, run
 
