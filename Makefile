@@ -17,8 +17,8 @@ $(NGX_FOLDER)/Makefile:
 	$(MAKE) configure
 
 configure: $(VENDOR_FOLDER)
-	cd $(NGX_FOLDER); ./configure --with-compat --with-debug \
-			--add-module=../..
+	cd $(NGX_FOLDER); ./configure --with-compat \
+			--add-dynamic-module=../..
 
 build: $(NGX_FOLDER) $(OSSL_FOLDER) $(NGX_FOLDER)/Makefile
 	$(MAKE) -C $(NGX_FOLDER) -f Makefile modules
@@ -36,6 +36,3 @@ install: $(VENDOR_FOLDER)
 
 $(VENDOR_FOLDER):
 	if [ ! -d vendor ]; then mkdir vendor; fi
-
-deploy:
-	$(MAKE) -C $(NGX_FOLDER) -f Makefile install
