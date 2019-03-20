@@ -98,12 +98,12 @@ ngx_http_hello_world_handler(ngx_http_request_t *r) {
     ngx_log_debug(NGX_LOG_DEBUG_HTTP, r->connection->log, 0, json_response, 0);
     
     b->pos = (u_char *) json_response;
-    b->last = (u_char *) json_response + sizeof((u_char*)json_response);
+    b->last = (u_char *) json_response + strlen(json_response);
     b->memory = 1;
     b->last_buf = 1;
 
     // Write Content-Lenght header.
-    r->headers_out.content_length_n = sizeof((u_char*)json_response);
+    r->headers_out.content_length_n = strlen(json_response);
     r->headers_out.status = NGX_HTTP_OK;
 
     // Write response.
