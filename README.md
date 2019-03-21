@@ -18,7 +18,11 @@ make configure
 
 ## Development
 
-The [`ngx_http_hello_world_module.c`](src/ngx_http_hello_world_module.c) is the main module file.
+- [`include/ngx_headers.h`](include/ngx_headers.h) holds utilitary functions for managing headers.
+- [`include/ngx_http_hello_world_module.h`](include/ngx_http_hello_world_module.h) holds the module definition as well as the functions' prototypes.
+- [`src/ngx_headers.c`](src/ngx_headers.c) implements utilitary functions for managing headers.
+- [`src/ngx_http_hello_world_module.c`](src/ngx_http_hello_world_module.c) is the main module file.
+- [`config`](config) is the module configuration file.
 
 ## Building
 
