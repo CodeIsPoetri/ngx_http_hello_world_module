@@ -1,6 +1,6 @@
 # Nginx Module Template
 
-This example reads the `X-Api-Key` and outputs its value in a JSON response.
+This example reads the `X-Api-Key` header and returns `401 Unauthorized` if its value differs from `lkashjdkalsjdaljhf6er65rt7ks`.
 
 ## Configuration
 
