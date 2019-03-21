@@ -1,6 +1,6 @@
 # Nginx Module Template
 
-This example reads the `X-Api-Key` and outputs its value in a JSON response.
+This example reads the `X-Api-Key` header and returns `401 Unauthorized` if its value differs from `lkashjdkalsjdaljhf6er65rt7ks`.
 
 ## Configuration
 
@@ -18,7 +18,7 @@ make configure
 
 ## Development
 
-The [`ngx_http_hello_world_module.c`](ngx_http_hello_world_module.c) is the main module file.
+The [`ngx_http_hello_world_module.c`](src/ngx_http_hello_world_module.c) is the main module file.
 
 ## Building
 
