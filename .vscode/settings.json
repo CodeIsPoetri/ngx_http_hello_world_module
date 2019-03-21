@@ -6,6 +6,7 @@
         "ngx_solaris_config.h": "c",
         "ngx_posix_config.h": "c",
         "utils.h": "c",
-        "main.h": "c"
+        "main.h": "c",
+        "ngx_headers.h": "c"
     }
 }
